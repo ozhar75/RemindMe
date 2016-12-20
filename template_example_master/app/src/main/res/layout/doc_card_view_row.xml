@@ -1,0 +1,69 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mimage"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:src="@drawable/male" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/dspeciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dname"
+                android:layout_marginLeft="15dp"
+                android:text="Speciality"
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dphone"
+                android:layout_below="@id/dspeciality"
+                android:layout_marginLeft="15dp"
+                android:text="Phone"
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/demail"
+                android:layout_below="@id/dphone"
+                android:layout_marginLeft="15dp"
+                android:text="Email"
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

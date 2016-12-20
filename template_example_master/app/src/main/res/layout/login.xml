@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/myPrimaryColor">
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RemindMe"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:textSize="40dp"
+            android:typeface="serif"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="user@email.com"
+            android:id="@+id/useremail"
+            android:layout_below="@+id/textView"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittext_topbackground"
+            android:drawableLeft="@drawable/email"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="password"
+            android:id="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/useremail"
+            android:layout_alignLeft="@+id/useremail"
+            android:layout_alignStart="@+id/useremail"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/password"
+            android:background="@drawable/edittext_bottombackgorund"
+            />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:background="@color/myPrimaryColor"
+            android:id="@+id/btnLogin"
+            android:onClick="userLogin"
+            android:text="LOGIN"
+            android:typeface="serif"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColor"
+            android:id="@+id/btnRegister"
+            android:onClick="userReg"
+            android:typeface="serif"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Register" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:typeface="serif"
+            android:textColor="@color/myPrimaryColor"
+            android:clickable="true"
+            android:onClick="passForget"
+            android:id="@+id/tvPasswordForget"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+    </LinearLayout>
